@@ -20,7 +20,7 @@ message = MIMEMultipart()
 message['Subject'] = 'A test mail sent by Python. It has an attachment.'
 #The subject line
 #The body and the attachments for the mail
-
+message['To']='receiver mail id'
 attach_file_name = 'image.jpg'
 attach_file = open(attach_file_name, 'rb').read() # Open the file as binary mode
 
